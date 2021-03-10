@@ -37,28 +37,28 @@ export const WorkExperience = () => {
     };
 
     return (
-        <InfoCard title="Опыт работы">
+        <InfoCard title="Work experience">
             {experiences.map((block, index: number) => (
                 <React.Fragment key={block.id}>
                     <ParagraphWrapper>
-                        <p>Место работы - {index + 1}</p>
+                        <p>Workplace - {index + 1}</p>
                         {index > 0 && <DeleteOutlined className="delete-icon" onClick={() => handleRemoveExperience(block.id)} />}
                     </ParagraphWrapper>
-                    <FormControl label="Компания" >
+                    <FormControl label="Company" >
                         <Input
-                            placeholder="Компания"
+                            placeholder="Company"
                             value={block.company}
                             onChange={(e) => handleInputChange(block.id, 'company', e.target.value)}
                         />
                     </FormControl>
-                    <FormControl label="Должность" >
+                    <FormControl label="Position" >
                         <Input
-                            placeholder="Должность"
+                            placeholder="Position"
                             value={block.position}
                             onChange={(e) => handleInputChange(block.id, 'position', e.target.value)}
                         />
                     </FormControl>
-                    <FormControl label="Период работы" >
+                    <FormControl label="Work period" >
                         <RangePicker
                             format="YYYY-MM-DD"
                             onChange=
@@ -66,7 +66,7 @@ export const WorkExperience = () => {
                         />
 
                     </FormControl>
-                    <FormControl label="Описание" >
+                    <FormControl label="Description" >
                         <TextArea
                             value={block.description}
                             onChange={(e: any) => handleInputChange(block.id, 'description', e.target.value)} />

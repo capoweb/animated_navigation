@@ -30,26 +30,26 @@ export const Education = () => {
     }
 
     return (
-        <InfoCard title="Образование">
-            <FormControl label="Учреждение">
+        <InfoCard title="Education">
+            <FormControl label="Institution">
                 <Input
-                    placeholder="Фио"
+                    placeholder="Institution"
                     value={education.institution}
                     onChange={handleInstituteChange}
                 />
             </FormControl>
-            <FormControl label="Дата окончания">
+            <FormControl label="Date of graduation">
                 <DatePicker
                     onChange={handleChangeGraduate}
-                    placeholder='Дата окончания'
+                    placeholder='Date of graduation'
                 />
             </FormControl>
             <Select
-                defaultValue="Бакалавр"
-                title="Степень"
+                defaultValue="Bachelor "
+                title="Degree"
                 options={[
-                    { value: 'Бакалавр', label: 'Бакалавр' },
-                    { value: 'Магистр', label: 'Магистр' }
+                    { value: 'Bachelor', label: 'Bachelor' },
+                    { value: 'Master', label: 'Master' }
                 ]}
                 onChange={handleChangeDegree}
                 value={education}

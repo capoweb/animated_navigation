@@ -39,7 +39,7 @@ export const FileUploader: React.FC<UploadPropsAnt> = ({ onChange }) => {
                         style={{ width: '100%' }}
                     />
                 ) : (
-                    <p>Загрузите аватар</p>
+                    <p>Upload the image </p>
                 )}
             </UploadAnt>
         </>

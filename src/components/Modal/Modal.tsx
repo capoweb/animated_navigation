@@ -56,22 +56,22 @@ export const Modal: React.FC<ModalProps> = ({ open, onCancel }) => {
                 onCancel={onCancel}
             >
                 <ReactToPrint
-                    trigger={() => <Button>Печать</Button>}
+                    trigger={() => <Button>Print</Button>}
                     content={() => componentRef.current}
                 />
                 <ModalWrapper ref={componentRef}>
                     <LeftPart>
-                        <div><img src={photo} alt="Аватар" /></div>
-                        <div><p>Возраст: {formatAgeHandler(birthday)}</p>
-                            <p className='insert'>{'Дата рождения: ' + formatDateHandler(birthday)}</p>
+                        <div><img src={photo} alt="Avatar" /></div>
+                        <div><p>Age: {formatAgeHandler(birthday)}</p>
+                            <p className='insert'>{'Date of birth: ' + formatDateHandler(birthday)}</p>
                         </div>
-                        <div><p>Место жительства</p>
+                        <div><p>Place of residence</p>
                             <p className='insert'>{location}</p>
                         </div>
-                        <div><p>Номер телефона</p>
+                        <div><p>Phone number</p>
                             <p className='insert'>{phone}</p>
                         </div>
-                        <div><p>Навыки</p>
+                        <div><p>Skills</p>
                             <ul>
                                 {skills.map((skill, index) => (
                                     <li key={index} className='insert'>{skill}</li>
@@ -87,17 +87,17 @@ export const Modal: React.FC<ModalProps> = ({ open, onCancel }) => {
                         <p>Образование</p>
                         <div className='bg'>
                             <p className='insert'> {institution} </p>
-                            <p className='insert'>Степень - {degree} </p>
-                            <p className='insert'>Дата окончания - {formatDateHandler(graduateDate)}</p>
+                            <p className='insert'>Degree - {degree} </p>
+                            <p className='insert'>Date of graduation - {formatDateHandler(graduateDate)}</p>
                         </div>
                         <div>
-                            <p>Опыт работы</p>
+                            <p>Work experience</p>
                             {experiences.map((experience, index) => (
                                 <div key={index}>
                                     <p className='bg'>{experience.company}</p>
                                     <p className='insert bg'>{experience.position}</p>
-                                    <p className='insert bg'>Период работы -{formatWorkPeriodDateHandler(experience.term)}</p>
-                                    <p>Описание</p>
+                                    <p className='insert bg'>Work period -{formatWorkPeriodDateHandler(experience.term)}</p>
+                                    <p>Description</p>
                                     <p className='insert'>{experience.description}</p>
                                 </div>
                             ))}

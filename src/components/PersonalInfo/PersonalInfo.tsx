@@ -38,32 +38,32 @@ export const PersonalInfo = () => {
     };
 
     return (
-        <InfoCard title="Персональная инфомация">
-            <FormControl label="Фио" >
+        <InfoCard title="Personal information">
+            <FormControl label="Full name" >
                 <Input
                     value={personalInfo.fullname}
-                    placeholder="Фио"
+                    placeholder="Full name"
                     onChange={handleFullNameChange}
                 />
             </FormControl>
-            <FormControl label="Место жительства">
+            <FormControl label="Place of residence">
                 <Input
                     value={personalInfo.location}
-                    placeholder="Место жительства"
+                    placeholder="Place of residence"
                     onChange={handleLocationChange}
                 />
             </FormControl>
-            <FormControl label="Номер телефона">
+            <FormControl label="Phone number">
                 <Input
                     value={personalInfo.phone}
-                    placeholder="Номер телефона"
+                    placeholder="Phone number"
                     onChange={handlePhoneChange}
                 />
             </FormControl>
-            <FormControl label="Дата рождения">
+            <FormControl label="Date of birth">
                 <DatePicker
                     onChange={handleChangeBirthday}
-                    placeholder='Дата рождения'
+                    placeholder='Date of birth'
                 />
             </FormControl>
             <FileUploader

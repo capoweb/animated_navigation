@@ -23,11 +23,11 @@ export const Skills = () => {
     }
 
     return (
-        <InfoCard title="Навыки">
+        <InfoCard title="Skills">
             <Select
                 mode="multiple"
-                title="Навыки"
-                placeholder="Выберите навыки"
+                title="Skills"
+                placeholder="Choose skills"
                 options={SkillsOptions}
                 onChange={handleChangeSkills}
                 value={selectedSkills}
