@@ -50,7 +50,7 @@ export const Modal: React.FC<ModalProps> = ({ open, onCancel }) => {
         <>
             <AntModal
                 centered
-                width={1100}
+                width={1000}
                 open={open}
                 onOk={onCancel}
                 onCancel={onCancel}

@@ -8,10 +8,9 @@
 }
 
 body {
-  max-width: 95%;
   background: rgb(225, 223, 252);
 }
 .container{
   margin: 0 auto;
-  max-width: 85%;
+  max-width: 90%;
 }

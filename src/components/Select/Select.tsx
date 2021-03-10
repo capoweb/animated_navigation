@@ -16,7 +16,7 @@ export const Select: React.FC<SelectProps<any>> = ({ mode, options, title, defau
       <Space wrap>
         <AntdSelect
           mode={mode}
-          style={{ minWidth: '280px' }}
+          style={{ minWidth: '250px' }}
           defaultValue={defaultValue}
           options={options}
           placeholder={placeholder}
