@@ -105,3 +105,42 @@ body{
 .navigation.active li{
     transform: scale(1);
 }
+@media (max-width: 768px){
+    .navigation.active .toggle-menu{
+        margin-bottom: 65px;
+    }
+    .navigation.active{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        height: 500px;
+        width: 150px;
+    }
+    .navigation li{
+        text-transform: uppercase;
+        transform: scale(0);
+        font-size: 25px;
+        margin-right: 40px;
+        list-style-type: none;
+    }
+}
+@media (max-width: 480px){
+    .navigation.active .toggle-menu{
+        margin-bottom: 65px;
+    }
+    .navigation.active{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        height: 500px;
+        width: 150px;
+    }
+    .navigation li{
+        text-transform: uppercase;
+        transform: scale(0);
+        font-size: 25px;
+        margin-right: 40px;
+        list-style-type: none;
+    }
+
+}
