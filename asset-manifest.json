@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Create_CV/static/css/main.db43a5df.css",
-    "main.js": "/Create_CV/static/js/main.aee2ba63.js",
+    "main.js": "/Create_CV/static/js/main.2a4f02cc.js",
     "static/media/tornPaper1.2.png": "/Create_CV/static/media/tornPaper1.2.5b4859d3c021368d725a.png",
     "index.html": "/Create_CV/index.html",
     "main.db43a5df.css.map": "/Create_CV/static/css/main.db43a5df.css.map",
-    "main.aee2ba63.js.map": "/Create_CV/static/js/main.aee2ba63.js.map"
+    "main.2a4f02cc.js.map": "/Create_CV/static/js/main.2a4f02cc.js.map"
   },
   "entrypoints": [
     "static/css/main.db43a5df.css",
-    "static/js/main.aee2ba63.js"
+    "static/js/main.2a4f02cc.js"
   ]
 }
